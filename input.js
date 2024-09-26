@@ -15,7 +15,7 @@ const setupInput = function (conn) {
 const handleUserInput = function (key) {
     switch (key) {
         case "w": //W            
-           connection.write("Move: up");
+            connection.write("Move: up");
             break;
         case "a": //A
             connection.write("Move: left");
@@ -25,6 +25,12 @@ const handleUserInput = function (key) {
             break;
         case "d": //D
             connection.write("Move: right");
+            break;
+        case "q": //D
+            connection.write("Say: I'm sooooo hungry");
+            break;
+        case "e": //D
+            connection.write("Say: om nom nom nom");
             break;
         case "\u0003": //Ctrl+C
             process.exit();
